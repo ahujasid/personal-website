@@ -17,59 +17,107 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="gradients.css">
+		<!-- <link rel="stylesheet" href="animateLine.css"> -->
 	</head>
 	
 	<body>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js" type="text/javascript"></script>
 
-		<div class = "outside-container">
+		<div id = "gradient-1"></div>
+		<div id = "gradient-2"></div>
+		<div id = "center-circle">
+			<!-- <img src = "assets/center-circle.svg" height = 200 width = 200></img> -->
+			<div id = "circle"></div>
+		</div>
 
+		<div class = "main-container">
 
-				
-				<div class = "content-container">
-
-				<h1>Hello there!</h1>
-
-				<div class = "flex">
-
-					<div id = "flex-1">
-						<p>
-							I’m Siddharth, a UX Designer that strives to create magical digital products through deeply understanding the stories of people.
-						</p>
-						<p>
-							Currently I’m a co-founder at 
-							<a id = "prophecy" href = "https://www.prophecy.one" target = "_blank">Prophecy,</a>
-							a digital innovation and product design consultancy.
-						</p>
-						<p>
-							Before this, I worked at 
-							<a id = "smallcase" href = "https://www.smallcase.com" target = "_blank">smallcase</a>
-							, where I set up the complete mobile platform.
-							I went on to explore the boundaries of design at <a id = "CIID" href = "https://www.ciid.dk" target = "_blank">CIID.</a> 
-							My <a id = "yoguide" href = "https://ux-design-awards.com/en/gewinner/yoguide" target = "_blank"> final project </a>
-							there won the UX Design Awards, which later turned into me almost becoming a potential founder with 
-							<a id = "LEGOVentures" href = "https://prophecy.one/work/lego-ventures/" target = "_blank"> LEGO Ventures. </a>
-							I also freelanced for a while, having set up the MVP for 
-							<a id = "luminovo" href = "https://luminovo.ai/" target = "_blank">Luminovo</a> 
-							and <a id = "heyo" href = "https://www.ggtv.co/" target = "_blank">Heyo.</a>
-						</p>
-
-					</div>
-
-					<div id = "flex-2">
-						<p>
-							I like building my ideas, having worked on some fun experiments like 
-							<a id = "moooodify" href = "https://www.ciid.edu.dk" target = "_blank">moooodify</a>, 
-							some <a id = "figma" href = "https://twitter.com/sidahuj/status/1437443359224655874" target = "_blank"> Figma plugins </a>
-							, and exploring new technologies (like the one in the background called three.js)
-						</p>
-						<p>
-							In my free time you’ll find me dabbling in NFTs, guitars, or 
-							<a id = "medium" href = "https://medium.com/@ahujasid" target = "_blank">writing something.</a>
-						</p>
-					</div>
-
-				</div>
+			<div class = "top-heading">
+				<div id = "name">Siddharth Ahuja</div>
+				<div id = "contact">Reach out at ahujasid@gmail.com</div>
 			</div>
+
+
+			<div class = "marquee">
+				<h1>ux designer. maker. co-founder at prophecy. ux designer. maker. co-founder at prophecy.</h1>
+			</div>
+
+			<div class = "content">
+
+				<div id = "flex-1">
+					<div id = "flex-1-1">
+						<div id = "flex-1-1-1" class = "header">
+							ABOUT ME
+						</div>
+						<div id = "flex-1-1-2">
+							<p>I’m Siddharth, a UX Designer who believes in advocating for users by using a research-heavy, experiment-based and collaborative design approach to create magical products.</p>
+
+							<p>Currently I’m a co-founder at Prophecy, a digital innovation and product design consultancy.</p>
+
+							<p>I like building out my ideas, having worked on some fun experiments like moooodify, some Figma plugins.</p>
+
+							<p>In my free time you’ll find me dabbling in web3, guitars, watching geeky physics videos, and exploring new technologies (like the art on this website made with three.js)</p>
+						</div>
+
+					</div>
+					<div id = "flex-1-2">
+
+						<div id = "flex-1-2-1" class = "header" >
+							HIT ME UP
+						</div>
+
+						<div id = "flex-1-2-2">
+							<div class = "social">T</div>
+							<div class = "social" id = "medium">M</div>
+							<div class = "social">E</div>
+						</div>
+						
+					</div>
+				</div>
+
+				<div id = "flex-2">
+				</div>
+
+				<div id = "flex-3">
+					<div id = "flex-3-1">
+
+						<div id = "flex-3-1-1" class = "header">
+							PAST WORK
+						</div>
+
+						<div id = "flex-3-1-2">
+							<div id = "lego-ventures" class="case-study">
+								<h2>Lego Ventures</h2>
+								<div class = "description">Designing experiments to validate an idea.</div>
+							</div>
+							<div id = "yoguide" class="case-study">
+								<h2>Yoguide</h2>
+								<div class = "description">An award-winning yoga app for the blind.</div>
+							</div>
+							<div id = "smallcase" class="case-study">
+								<h2>smallcase</h2>
+								<div class = "description">Making investing as easy as booking a cab.</div>
+							</div>
+						</div>
+
+					</div>
+					<div id = "flex-3-2">
+
+						<div id = "flex3-3-1" class = "header">
+							WHAT'S PLAYING
+						</div>
+
+						<div id = "flex3-3-1">
+							<iframe id = "spotify" src="https://open.spotify.com/embed/track/6ywnTBL62OTd8HUaztJizb?theme=0" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+						</div>
+						
+					</div>
+				</div>
+
+			</div>		
 			
 		</div>
 
@@ -95,7 +143,19 @@
 -->
 
 
+		<script>
+			$(window).on('load', function () {
+			$('.marquee').marquee({
+				duplicated: 'true',
+				startVisible: 'true',
+				gap: 24,
+				duration: 5 * $('.marquee').width()
+		
 
+			});
+		});
+		// $('#maindiv').width($('#div1').width());
+		</script>
 
 
 		<script src="three.min.js"></script>
@@ -220,10 +280,10 @@
 			var planeMat, planeGeo, plane;
 
 
-            var blueColor = {
-                r: 0.25,
-                g: 0.50,
-                b: 1.0,
+            var defaultColor = {
+                r: 0.3,
+                g: 0.3,
+                b: 0.3,
                 a: 0.25,
             }
 
@@ -249,9 +309,9 @@
             }
 
             var pinkColor = {
-                r: 0.89,
-                g: 0.50,
-                b: 1.0,
+                r: 0.92,
+                g: 0.35,
+                b: 0.66,
                 a: 0.25,
             }
 
@@ -289,7 +349,8 @@
 
      
             var speed = 1;
-  
+			var alpha = 0.5;
+			var defaultBG = "#f0f0f0";
 
             
            let smallcase = document.getElementById("smallcase");
@@ -307,158 +368,157 @@
 			animate();
 
 
-            function setEventHandlers(){
-                smallcase.addEventListener("mouseenter", function(event){
+            // function setEventHandlers(){
+            //     smallcase.addEventListener("mouseenter", function(event){
                     
 			
-					document.body.style.backgroundColor = "#000000";
-					changeColor(purpleColor);
+			// 		document.body.style.backgroundColor = "#352CEE";
+			// 		changeColor(whiteColor);
 				
 
-                    speed = Math.random()*0.2;
+            //         speed = Math.random()*0.2;
              
-                })
+            //     })
 
-                smallcase.addEventListener("mouseleave", function(event){
+            //     smallcase.addEventListener("mouseleave", function(event){
                     
-					document.body.style.backgroundColor = "#000000";
-                    changeColor(blueColor);
-                    speed = 1;
+			// 		document.body.style.backgroundColor = defaultBG;
+            //         changeColor(defaultColor);
+            //         speed = 1;
          
-                })
+            //     })
 
-				prophecy.addEventListener("mouseenter", function(event){
+			// 	prophecy.addEventListener("mouseenter", function(event){
                     
                    
-					// document.body.style.backgroundColor = "#FF725C";
-					changeColor(redColor);
-					speed = Math.random()*0.2;
+			// 		document.body.style.backgroundColor = "#FF725C";
+			// 		changeColor(whiteColor);
+			// 		speed = Math.random()*0.2;
        
-                })
+            //     })
 
-                prophecy.addEventListener("mouseleave", function(event){
+            //     prophecy.addEventListener("mouseleave", function(event){
                     
-                    changeColor(blueColor);
-					document.body.style.backgroundColor = "#000000";
-                    speed = 1;
+            //         changeColor(defaultColor);
+			// 		document.body.style.backgroundColor = defaultBG;
+            //         speed = 1;
          
-                })
+            //     })
 
 
-				CIID.addEventListener("mouseenter", function(event){
-					document.body.style.backgroundColor = "#F0F0F0";
-					document.body.style.color = "#231f20";
-					changeColor(greyColor);					
-					speed = Math.random()*0.2;
-                })
+			// 	CIID.addEventListener("mouseenter", function(event){
+			// 		document.body.style.backgroundColor = "#F0F0F0";
+			// 		document.body.style.color = "#231f20";
+			// 		changeColor(greyColor);					
+			// 		speed = Math.random()*0.2;
+            //     })
 
-                CIID.addEventListener("mouseleave", function(event){
+            //     CIID.addEventListener("mouseleave", function(event){
                     
-                    changeColor(blueColor);
-					document.body.style.backgroundColor = "#000000";
-					document.body.style.color = "#fff";
-                    speed = 1;
+            //         changeColor(defaultColor);
+			// 		document.body.style.backgroundColor = "#000000";
+			// 		document.body.style.color = "#fff";
+            //         speed = 1;
          
-                })
+            //     })
 
 
-				yoguide.addEventListener("mouseenter", function(event){
-					changeColor(greenColor);					
-					speed = Math.random()*0.2;
-                })
+			// 	yoguide.addEventListener("mouseenter", function(event){
+			// 		changeColor(greenColor);					
+			// 		speed = Math.random()*0.2;
+            //     })
 
-                yoguide.addEventListener("mouseleave", function(event){
+            //     yoguide.addEventListener("mouseleave", function(event){
                     
-                    changeColor(blueColor);		
-                    speed = 1;
+            //         changeColor(defaultColor);	
+            //         speed = 1;
          
-                })
+            //     })
 
-				LEGOVentures.addEventListener("mouseenter", function(event){
-					changeColor(orangeColor);					
-					speed = Math.random()*0.2;
-                })
+			// 	LEGOVentures.addEventListener("mouseenter", function(event){
+			// 		changeColor(orangeColor);					
+			// 		speed = Math.random()*0.2;
+            //     })
 
-                LEGOVentures.addEventListener("mouseleave", function(event){
+            //     LEGOVentures.addEventListener("mouseleave", function(event){
                     
-                    changeColor(blueColor);		
-                    speed = 1;
+            //         changeColor(defaultColor);		
+            //         speed = 1;
          
-                })
+            //     })
                 
-				luminovo.addEventListener("mouseenter", function(event){
-					changeColor(whiteColor);					
-					speed = Math.random()*0.2;
-                })
+			// 	luminovo.addEventListener("mouseenter", function(event){
+			// 		changeColor(whiteColor);					
+			// 		speed = Math.random()*0.2;
+            //     })
 
-                luminovo.addEventListener("mouseleave", function(event){
+            //     luminovo.addEventListener("mouseleave", function(event){
                     
-                    changeColor(blueColor);		
-                    speed = 1;
+            //         changeColor(defaultColor);	
+            //         speed = 1;
          
-                })
+            //     })
 
-				heyo.addEventListener("mouseenter", function(event){
-					changeColor(yellowColor);					
-					speed = Math.random()*0.2;
-                })
+			// 	heyo.addEventListener("mouseenter", function(event){
+			// 		changeColor(yellowColor);					
+			// 		speed = Math.random()*0.2;
+            //     })
 
-                heyo.addEventListener("mouseleave", function(event){
+            //     heyo.addEventListener("mouseleave", function(event){
                     
-                    changeColor(blueColor);		
-                    speed = 1;
+            //         changeColor(defaultColor);		
+            //         speed = 1;
          
-                })
+            //     })
 
-				moooodify.addEventListener("mouseenter", function(event){
-					changeColor(purpleColor);					
-					speed = Math.random()*0.2;
-                })
+			// 	moooodify.addEventListener("mouseenter", function(event){
+			// 		changeColor(purpleColor);					
+			// 		speed = Math.random()*0.2;
+            //     })
 
-                moooodify.addEventListener("mouseleave", function(event){
+            //     moooodify.addEventListener("mouseleave", function(event){
                     
-                    changeColor(blueColor);		
-                    speed = 1;
+            //         changeColor(defaultColor);	
+            //         speed = 1;
          
-                })
+            //     })
 
-				figma.addEventListener("mouseenter", function(event){
-					changeColor(pinkColor);					
-					speed = Math.random()*0.2;
-                })
+			// 	figma.addEventListener("mouseenter", function(event){
+			// 		changeColor(pinkColor);					
+			// 		speed = Math.random()*0.2;
+            //     })
 
-                figma.addEventListener("mouseleave", function(event){
+            //     figma.addEventListener("mouseleave", function(event){
                     
-                    changeColor(blueColor);		
-                    speed = 1;
+            //         changeColor(defaultColor);	
+            //         speed = 1;
          
-                })
+            //     })
 
-				medium.addEventListener("mouseenter", function(event){
-					changeColor(whiteColor);					
-					speed = Math.random()*0.2;
-                })
+			// 	medium.addEventListener("mouseenter", function(event){
+			// 		changeColor(whiteColor);					
+			// 		speed = Math.random()*0.2;
+            //     })
 
-                medium.addEventListener("mouseleave", function(event){
+            //     medium.addEventListener("mouseleave", function(event){
                     
-                    changeColor(blueColor);		
-                    speed = 1;
+            //         changeColor(defaultColor);	
+            //         speed = 1;
          
-                })
-            }
+            //     })
+            // }
 
 			function init() {
 
-				container = document.createElement( 'div' );
-				document.body.appendChild( container );
+				container = document.getElementById( 'flex-2' );
 
 				renderer = new THREE.WebGLRenderer();
-				renderer.setSize( window.innerWidth, window.innerHeight );
-				container.appendChild( renderer.domElement );
+				renderer.setSize( container.offsetWidth, container.offsetHeight );
+				container.prepend( renderer.domElement );
 
 				scene = new THREE.Scene();
 
-				camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 1, 1000 );
+				camera = new THREE.PerspectiveCamera( 50, container.offsetWidth / container.offsetHeight, 1, 1000 );
 				scene.add( camera );
 
 				controls = new THREE.OrbitControls2( camera );
@@ -467,7 +527,7 @@
 
 				//
 
-				var width = 1024, height = 1024;
+				var width = container.offsetWidth, height = container.offsetHeight;
 
 				if ( ! renderer.context.getExtension( 'OES_texture_float' ) ) {
 
@@ -475,7 +535,7 @@
 
 				}
 
-                setEventHandlers();
+                // setEventHandlers();
 
 				// Start Creation of DataTexture
 				// Could it be simplified with THREE.FBOUtils.createTextureFromData(textureWidth, textureWidth, data); ?
@@ -541,7 +601,7 @@
 						"width": { type: "f", value: width },
 						"height": { type: "f", value: height },
 
-						"pointColor": { type: "v4", value: new THREE.Vector4( 0.25, 0.50, 1.0, 0.25 ) },
+						"pointColor": { type: "v4", value: new THREE.Vector4( pinkColor.r, pinkColor.g,  pinkColor.b, 0.25 ) },
 						"pointSize": { type: "f", value: 1 }
 
 					},

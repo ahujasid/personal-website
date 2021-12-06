@@ -18,6 +18,7 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -46,7 +47,8 @@ table {
 
 body {
     font-family: Monospace;
-    background-color: #000000;
+    background-color: #141414;
+    color: #fff;
     margin: 0px;
     overflow: hidden;
     font-size: 18px;
@@ -56,56 +58,234 @@ body {
 
 @font-face {
     font-family: Gosha;
-    src: url("gosha.otf") format("opentype");
+    src: url("assets/gosha.otf") format("opentype");
 }
 
 @font-face {
-    font-family: Montreal;
-    src: url("montreal.otf") format("opentype");
+    font-family: Swear;
+    src: url("assets/swear.otf") format("opentype");
+}
+
+@font-face {
+    font-family: DM;
+    src: url("assets/dm.ttf") format("truetype");
+}
+
+#spotify{
+    z-index: -99;
+    margin-top: 1px;
 }
 
 h1{
-    font-size: 48px;
-    margin-bottom: 32px;
-    font-family: 'Gosha';
+    font-size: 80px;
+    line-height: 152px;
+    font-family: 'Swear', serif;
 }
 
-.flex{
+h2{
+    font-size: 48px;
+    padding-bottom: 16px;
+    font-family: 'Swear', serif;
+}
+
+.main-container{
+    width: 100%;
+    max-width: 1920px;
+    outline: 1px solid white;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.marquee{
+
+    height: 152px;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+  
+  @keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes marquee2 {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-200%);
+    }
+  }
+
+.top-heading{
+    height: 56px;
+    outline: 1px solid white;
     display: flex;
-    width: 70%;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+#name{
+    font-family: 'DM', sans-serif;
+    font-size: 16px;
+    padding-left: 32px;
+}
+
+#contact{
+    font-family: 'DM', sans-serif;
+    font-size: 16px;
+    /* margin-right: 0; */
+    margin-left: auto;
+    padding-right: 32px;
+}
+
+.content{
+    outline: 1px solid white;
+    height: calc(100vh - 208px);
+    display: flex;
+}
+
+.description{
+    font-size: 16px;
+    font-family: 'DM', sans-serif;
 }
 
 #flex-1{
-    margin-right: 64px;
-    width: 40%;
+    /* display: inline-block; */
+    width: 31%;
+    height: 100%;
+    outline: 1px solid white;
+}
+
+#flex-1-1{
+    height: calc(100% - 10vw);
+    min-height: 400px;
+}
+
+#flex-1-1-2{
+    padding: 32px;
+}
+
+#flex-1-2{
+    height: 10vw;
+}
+
+#flex-1-2-2{
+    display: flex;
+    height: calc(100% - 48px);
+    width: 100%;
+}
+
+.social{
+    outline: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    height: 100%;
+}
+
+#medium{
+    width: 34%;
 }
 
 #flex-2{
-    width: 40%;
+    width: 38%;
+    height: 100%;
 }
+
+#center-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 208px);
+    width: 100%;
+    position: absolute;
+    top: 208px;
+    left: 0;
+    z-index: -999;
+}
+
+#circle{
+    height: 220px;
+    width: 220px;
+    border-radius: 500px;
+    background: linear-gradient(#EE5BAA, #2033DB);
+    box-shadow: 0 0px 80px 0 rgba(238, 91, 170, 0.3);
+
+}
+
+
+
+#flex-3{
+    width: 31%;
+    height: 100%;
+    outline: 1px solid white;
+}
+
+
+#flex-3-1{
+    height: calc(100% - 138px);
+}
+
+#flex-3-1-2{
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 48px);
+}
+
+#flex-3-2{
+   height: 138px;
+}
+
+.case-study{
+    height: 33%;
+    outline: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px;
+}
+
+
+
+#yoguide{
+    height: 34%;
+}
+
+
 
 p{
     margin-bottom: 32px;
+    font-family: 'DM',sans-serif;
 }
 
 canvas{
-    position:absolute;
-    top: 0vw;
-    left: 0vw;
-    z-index: -99999;
+    z-index: 1;
 }
 
-
-.content-container{
-    position: absolute;
-    bottom: 5vh;
-    left: 10vh;
-}
 
 a{
     text-decoration: none;
     color: inherit;
-    font-family: 'Gosha';
+}
+
+.header{
+    text-align: center;
+    display: flex;
+    height: 48px;
+    outline: 1px solid white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gosha', sans-serif;
 }
 
 
