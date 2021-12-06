@@ -149,7 +149,7 @@
 				duplicated: 'true',
 				startVisible: 'true',
 				gap: 24,
-				duration: 5 * $('.marquee').width()
+				duration: 10 * $('.marquee').width()
 		
 
 			});
@@ -161,6 +161,7 @@
 		<script src="three.min.js"></script>
 		<script src="FBOUtils.js"></script>
 		<script src="OrbitControls2.js"></script>
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 
 		<script src="dat.gui.min.js"></script>
 
@@ -264,12 +265,16 @@
 
 		</script>
 
+		<script id = ></script>
+
 		<script>
 
 			var container;
 
 			var scene, camera, light, renderer;
 			var geometry, cube, mesh, material;
+
+			
 
 			var data, texture, points;
 

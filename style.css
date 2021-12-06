@@ -77,9 +77,11 @@ body {
 }
 
 h1{
-    font-size: 80px;
-    line-height: 152px;
+    font-size: 120px;
+    line-height: 172px;
     font-family: 'Swear', serif;
+    position: relative;
+    bottom: 8px;
 }
 
 h2{
@@ -98,7 +100,7 @@ h2{
 
 .marquee{
 
-    height: 152px;
+    height: 172px;
     overflow: hidden;
     width: 100%;
 }
@@ -165,7 +167,7 @@ h2{
 }
 
 #flex-1-1{
-    height: calc(100% - 10vw);
+    height: 85%;
     min-height: 400px;
 }
 
@@ -174,7 +176,7 @@ h2{
 }
 
 #flex-1-2{
-    height: 10vw;
+    height: 15%;
 }
 
 #flex-1-2-2{
