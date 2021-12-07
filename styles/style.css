@@ -18,7 +18,7 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -44,7 +44,6 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
 
 
 :root{
@@ -92,7 +91,8 @@ h2{
 .main-container{
     width: 100%;
     max-width: 1920px;
-    outline: 1px solid var(--border-color);
+    position: relative;
+    /* border: 1px solid var(--border-color); */
     height: 100vh;
     margin: 0 auto;
 }
@@ -106,7 +106,8 @@ h2{
 
 .top-heading{
     height: 56px;
-    outline: 1px solid var(--border-color);
+    position: relative;
+    /* border: 1px solid var(--border-color); */
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -132,10 +133,11 @@ h2{
 }
 
 .content{
-    outline: 1px solid var(--border-color);
+    /* border: 1px solid var(--border-color); */
     height: calc(100vh - 208px);
     display: flex;
     width: 100%;
+    position: relative;
 }
 
 .description{
@@ -149,7 +151,8 @@ h2{
     /* display: inline-block; */
     width: 50%;
     height: 100%;
-    outline: 1px solid var(--border-color);
+    position: relative;
+    /* border: 1px solid var(--border-color); */
 }
 
 #flex-1-1{
@@ -189,7 +192,8 @@ h2{
 
 #yoguide{
     height: 34%;
-    outline: 1px solid var(--border-color);
+    position: relative;
+    /* border: 1px solid var(--border-color); */
 }
 
 
@@ -244,7 +248,8 @@ a{
     text-align: center;
     display: flex;
     height: 48px;
-    outline: 1px solid var(--border-color);
+    position: relative;
+    /* border: 1px solid var(--border-color); */
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -285,7 +290,7 @@ a{
     .main-container{
         width: 100%;
         max-width: 1920px;
-        outline: 1px solid var(--border-color);
+        border: 1px solid var(--border-color);
         height: 100%;
         margin: 0 auto;
     }
@@ -359,7 +364,7 @@ a{
     
     #yoguide{
         height: 128px;
-        /* outline: 1px solid var(--border-color); */
+        /* border: 1px solid var(--border-color); */
     }
     
 
