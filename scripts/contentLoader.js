@@ -50,6 +50,11 @@ window.onload = function()
                 opacityAnim[idx].style.animation="opacityIn 0.4s linear forwards";
               }
         },400);
+
+        setTimeout(function(){
+          document.getElementById('gradient-1').style.animation = "gradientIn 0.2s linear forwards";
+          document.getElementById('gradient-2').style.animation = "gradientIn 0.2s linear forwards";
+        },300);
     }
 
     else{
@@ -59,7 +64,14 @@ window.onload = function()
             opacityAnim[idx].style.animation="opacityIn 0.4s linear forwards";
           }
     },1000);
+
+    setTimeout(function(){
+      document.getElementById('gradient-1').style.animation = "gradientIn 0.2s linear forwards";
+      document.getElementById('gradient-2').style.animation = "gradientIn 0.2s linear forwards";
+    },900);
     }
+
+    
     
 
    

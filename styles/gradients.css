@@ -7,7 +7,7 @@
     width: 50vw;
     bottom: -20vw;
     right: -10vw;
-    opacity: 0.3;
+    opacity: 0;
 
     -webkit-filter: blur(64px);
     -moz-filter: blur(64px);
@@ -28,7 +28,7 @@
     width: 50vw;
     bottom: -40vw;
     right: -5vw;
-    opacity: 0.3;
+    opacity: 0;
 
     -webkit-filter: blur(64px);
     -moz-filter: blur(64px);
@@ -37,6 +37,17 @@
     filter: blur(64px);
 
     z-index: -9999;
+}
+
+@keyframes gradientIn {
+    0% {
+        opacity: 0;
+    }
+ 
+ 
+    100% {
+        opacity: 0.3;
+    }
 }
 
 
