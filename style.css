@@ -47,7 +47,7 @@ table {
 
 body {
     font-family: Monospace;
-    background-color: #141414;
+    background-color: #fff;
     color: #fff;
     margin: 0px;
     overflow: hidden;
@@ -201,6 +201,7 @@ h2{
 #flex-2{
     width: 38%;
     height: 100%;
+    position: relative;
 }
 
 #center-circle{
@@ -271,7 +272,13 @@ p{
 
 canvas{
     z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+
 
 
 a{
