@@ -79,6 +79,11 @@ var canvas;
                     else if(linkHover){
                         ctx.strokeStyle = '#fff';
                     }
+
+                    if(window.screen.width < 1024){
+                        ctx.strokeStyle = '#fff';
+                    }
+
                 // }
 
                 // if(isDarkModeWaves){

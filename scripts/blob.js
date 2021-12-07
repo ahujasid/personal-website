@@ -349,6 +349,10 @@ var container;
 
 				else renderer.setClearColor(0xffffff,0);
 
+				if(window.screen.width < 1024){
+					renderer.setClearColor(0x000fff);
+				}
+
 
 
 				camera.lookAt(scene.position);
