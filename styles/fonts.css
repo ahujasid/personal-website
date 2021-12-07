@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: Swear;
-    src: url("assets/swear.otf") format("opentype");
+    src: url("../assets/swear.otf") format("opentype");
     font-weight: 300;
     font-style: normal;
 }
@@ -9,35 +9,35 @@
 
 @font-face {
     font-family: Swear;
-    src: url("assets/swear-regular.otf") format("opentype");
+    src: url("../assets/swear-regular.otf") format("opentype");
     font-weight: regular;
     font-style: normal;
 }
 
 @font-face {
     font-family: Obviously;
-    src: url("assets/ObviouslyDemo-Extended.otf") format("opentype");
+    src: url("../assets/ObviouslyDemo-Extended.otf") format("opentype");
     font-weight: 500;
     font-style: extended;
 }
 
 @font-face {
     font-family: Obviously;
-    src: url("assets/ObviouslyDemo-Wide.otf") format("opentype");
+    src: url("../assets/ObviouslyDemo-Wide.otf") format("opentype");
     font-weight: 500;
     font-style: wide;
 }
 
 @font-face {
     font-family: Obviously;
-    src: url("assets/ObviouslyDemo-Regular.otf") format("opentype");
+    src: url("../assets/ObviouslyDemo-Regular.otf") format("opentype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: Obviously;
-    src: url("assets/ObviouslyDemo-Semibold.otf") format("opentype");
+    src: url("../assets/ObviouslyDemo-Semibold.otf") format("opentype");
     font-weight: 600;
     font-style: normal;
 }

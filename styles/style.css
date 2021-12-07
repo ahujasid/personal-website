@@ -63,14 +63,10 @@ table {
 }
 
 body {
-    font-family: Monospace;
     background-color: var(--bg-color);
     color: var(--text-color);
     margin: 0px;
     overflow: hidden;
-    font-size: 18px;
-    font-family: 'Montreal';
-    line-height: 24px;
 }
 
 
@@ -105,8 +101,6 @@ h2{
     overflow: hidden;
     width: 100%;
 }
-
-
 
 .top-heading{
     height: 56px;
@@ -166,13 +160,11 @@ h2{
 
 #flex-1-2{
     height: 60%;
-    margin-bottom: 0;
-    margin-top: auto;
 }
 
 #flex-1-2-2{
     display: flex;
-    height: calc(100% - 48px);
+    height: calc(100% - 64px);
     width: 100%;
     flex-direction: column;
 }
@@ -206,6 +198,7 @@ p{
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
+    line-height: 1.4;
 }
 
 canvas{
@@ -258,3 +251,149 @@ a{
     font-style: normal;
     font-size: 15px;
 }
+
+
+@media screen and (max-width: 1024px) {
+        
+    
+    h1{
+        font-size: 56px;
+        line-height: 96px;
+        bottom: 8px;
+    }
+    
+    h2{
+        font-size: 28px;
+        padding-bottom: 8px;
+    }
+    
+    .main-container{
+        width: 100%;
+        max-width: 1920px;
+        outline: 1px solid var(--border-color);
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .marquee{
+        height: 96px;
+    }
+    
+    .top-heading{
+        height: 48px;
+    }
+    
+    #name{
+        display: none;
+    }
+    
+    #contact{
+        font-size: 14px;
+        /* margin-right: 0; */
+        margin-right: auto;
+        padding-left: 24px;
+    }
+    
+    .content{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    
+    .description{
+        font-size: 14px;
+    }
+    
+    #flex-1{
+        /* display: inline-block; */
+        width: 100%;
+        height: auto;
+    
+    }
+    
+    #flex-1-1{
+        height: fit-content;
+    }
+    
+    #flex-1-1-2{
+        padding: 24px;
+    }
+    
+    /* #flex-1-2{
+        height: 60%;
+    } */
+    
+    #flex-1-2-2{
+        height: auto;
+        width: 100%;
+    }
+    
+    
+    #flex-2{
+        width: 100%;
+        height: 360px;
+        position: relative;
+    }
+    
+    
+    .case-study{
+        height: 128px;
+        padding: 24px;
+    }
+    
+    #yoguide{
+        height: 128px;
+        /* outline: 1px solid var(--border-color); */
+    }
+    
+    
+    
+    p{
+        margin-bottom: 24px;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    
+    canvas{
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    
+    
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .text-link{
+        font-weight: 600;
+    }
+
+
+    .case-study:hover{
+        /* background-color: var(--text-color); */
+        color: var(--bg-color);
+    }
+    
+    #smallcase:hover{
+        background-color: var(--smallcase-color);
+    }
+    
+    #yoguide:hover{
+        background-color: var(--yoguide-color);
+    }
+    
+    #lego-ventures:hover{
+        background-color: var(--lego-ventures-color);
+    }
+    
+    .header{
+        height: 48px;
+        font-size: 14px;
+    }
+    
+  }
