@@ -14,7 +14,7 @@ var canvas;
             h = canvas.height = window.innerHeight;
             tick = 0;
             canvas.addEventListener("mousemove", onMouseMove);
-            canvas.addEventListener("click", onClick);
+            // canvas.addEventListener("click", onClick);
             mouseX = 0;
             mouseY = 0;
         }
@@ -24,9 +24,9 @@ var canvas;
             mouseY = event.clientY;
         }
 
-        function onClick() {
-        noise.seed(Math.random());
-        }
+        // function onClick() {
+        // noise.seed(Math.random());
+        // }
 
         function draw(now) {
         // ctx.fillStyle = "white";
@@ -40,19 +40,20 @@ var canvas;
         function wave(y0) {
             var mx = mouseX/500;
             var my = mouseY/500;
-            var a = 20 + noise.perlin2(mx + 100+tick, my + y0/100+tick) * 20;
+            var a = 20 + noise.perlin2(mx + 100+tick, my + y0/100+tick) * 40;
             var p = 20 + noise.perlin2(1000+tick, my + y0/100+tick) * 5;
             var phase = noise.perlin2(mx + 2000+tick, my + y0/100+tick) * 5;
             ctx.beginPath();
             for(var x = 0; x < w; x++) {
                 var y = Math.sin(x/w*p + phase) * a + y0;
+                ctx.strokeStyle = '#141414';
                 ctx.lineTo(x, y);
             }
             ctx.stroke();
         }
 
         function waves() {
-        for(var y0 = 0; y0 < h; y0 += 30) {
+        for(var y0 = 0; y0 < h; y0 += 100) {
             wave(y0);
         }
         }

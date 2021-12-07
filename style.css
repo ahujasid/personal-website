@@ -48,7 +48,7 @@ table {
 body {
     font-family: Monospace;
     background-color: #fff;
-    color: #fff;
+    color: #141414;
     margin: 0px;
     overflow: hidden;
     font-size: 18px;
@@ -64,6 +64,16 @@ body {
 @font-face {
     font-family: Swear;
     src: url("assets/swear.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: Swear;
+    src: url("assets/swear-regular.otf") format("opentype");
+    font-weight: regular;
+    font-style: normal;
 }
 
 @font-face {
@@ -82,18 +92,20 @@ h1{
     font-family: 'Swear', serif;
     position: relative;
     bottom: 8px;
+    font-weight: 300;
 }
 
 h2{
     font-size: 48px;
     padding-bottom: 16px;
     font-family: 'Swear', serif;
+    font-weight: normal;
 }
 
 .main-container{
     width: 100%;
     max-width: 1920px;
-    outline: 1px solid white;
+    outline: 1px solid #141414;
     height: 100vh;
     margin: 0 auto;
 }
@@ -127,7 +139,7 @@ h2{
 
 .top-heading{
     height: 56px;
-    outline: 1px solid white;
+    outline: 1px solid #141414;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -149,9 +161,10 @@ h2{
 }
 
 .content{
-    outline: 1px solid white;
+    outline: 1px solid black;
     height: calc(100vh - 208px);
     display: flex;
+    width: 100%;
 }
 
 .description{
@@ -161,14 +174,13 @@ h2{
 
 #flex-1{
     /* display: inline-block; */
-    width: 31%;
+    width: 50%;
     height: 100%;
-    outline: 1px solid white;
+    outline: 1px solid #141414;
 }
 
 #flex-1-1{
-    height: 85%;
-    min-height: 400px;
+    height: 40%;
 }
 
 #flex-1-1-2{
@@ -176,17 +188,20 @@ h2{
 }
 
 #flex-1-2{
-    height: 15%;
+    height: 60%;
+    margin-bottom: 0;
+    margin-top: auto;
 }
 
 #flex-1-2-2{
     display: flex;
     height: calc(100% - 48px);
     width: 100%;
+    flex-direction: column;
 }
 
 .social{
-    outline: 1px solid white;
+    outline: 1px solid #141414;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,7 +214,7 @@ h2{
 }
 
 #flex-2{
-    width: 38%;
+    width: 50%;
     height: 100%;
     position: relative;
 }
@@ -226,41 +241,17 @@ h2{
 }
 
 
-
-#flex-3{
-    width: 31%;
-    height: 100%;
-    outline: 1px solid white;
-}
-
-
-#flex-3-1{
-    height: calc(100% - 138px);
-}
-
-#flex-3-1-2{
-    display: flex;
-    flex-direction: column;
-    height: calc(100% - 48px);
-}
-
-#flex-3-2{
-   height: 138px;
-}
-
 .case-study{
     height: 33%;
-    outline: 1px solid white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 32px;
 }
 
-
-
 #yoguide{
     height: 34%;
+    outline: 1px solid black;
 }
 
 
@@ -290,7 +281,7 @@ a{
     text-align: center;
     display: flex;
     height: 48px;
-    outline: 1px solid white;
+    outline: 1px solid #141414;
     width: 100%;
     align-items: center;
     justify-content: center;
