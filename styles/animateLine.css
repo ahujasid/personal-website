@@ -4,8 +4,6 @@
 }
 
 
-
-
 .line::before {
     content: "";
     position: absolute;
@@ -16,9 +14,21 @@
     z-index: -99;
     background: transparent;
     border: 1px solid transparent;
-    animation: animate 2s linear forwards;
+    animation: animate 2s ease-out forwards;
 }
 
+#big-line::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0;
+    height: 0;
+    z-index: -99;
+    background: transparent;
+    border: 1px solid transparent;
+    animation: animate 3s ease-out forwards;
+}
 
 
 @keyframes animate {
@@ -61,7 +71,20 @@
     height: 0;
     background: transparent;
     border: 1px solid transparent;
-    animation: animates 2s linear forwards;
+    animation: animates 1.5s ease-out forwards;
+}
+
+#big-line::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -99;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 1px solid transparent;
+    animation: animates 3s ease-out forwards;
 }
  
 

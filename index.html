@@ -20,6 +20,7 @@
 		<link rel="stylesheet" href="styles/style.css">
 		<link rel="stylesheet" href="styles/gradients.css">
 		<link rel="stylesheet" href="styles/animateLine.css">
+		<link rel="stylesheet" href="styles/fade.css">
 	</head>
 	
 	<body>
@@ -29,34 +30,32 @@
 
 		<div id = "gradient-1"></div>
 		<div id = "gradient-2"></div>
-		<!-- <div id = "center-circle">
-			<div id = "circle"></div>
-		</div> -->
 
 		<div class = "main-container line">
 
 			<div class = "top-heading line">
-				<div id = "name">Siddharth Ahuja</div>
+				<div id = "name" class = "fade1">Siddharth Ahuja</div>
 				<!-- <button id = "dark-mode">Dark mode</button> -->
-				<div id = "contact">Reach out at ahujasid@gmail.com</div>
+				<div id = "contact" class = "fade1">Reach out at ahujasid@gmail.com</div>
 			</div>
 
 
-			<div class = "marquee">
+			<div class = "marquee opacityAnim">
 				<h1>ux designer. maker. co-founder at prophecy. ux designer. maker. co-founder at prophecy.</h1>
 			</div>
 
-			<div class = "content line">
+			<div id = "big-line" class = "content">
+				<!-- <div class = "content"> -->
 
 				<div id = "flex-1" class = "line">
 					<div id = "flex-1-1">
 						<div id = "flex-1-1-2">
-							<p>I’m Siddharth, a UX Designer who believes in advocating for users by using a research-heavy, experiment-based and collaborative design approach to create 
+							<p class = "fade1">I’m Siddharth, a UX Designer who believes in advocating for users by using a research-heavy, experiment-based and collaborative design approach to create 
 								<a class = "text-link" id = "magic-article" href = "https://medium.com/swlh/a-designers-guide-to-creating-digital-products-that-inspire-c4fc0b7e15d0" target="_blank">magical products.</a></p>
 
-							<p>Currently I’m a co-founder at <a class = "text-link" id = "prophecy" href = "https://prophecy.one/" target="_blank">Prophecy</a>, a digital innovation and product design consultancy.</p>
+							<p class = "fade1">Currently I’m a co-founder at <a class = "text-link" id = "prophecy" href = "https://prophecy.one/" target="_blank">Prophecy</a>, a digital innovation and product design consultancy.</p>
 
-							<p>In my free time you’ll find me building out ideas like <a class = "text-link" id = "moooodify" href = "https://www.moooodify.com/" target="_blank">moooodify, </a>
+							<p class = "fade1">In my free time you’ll find me building out ideas like <a class = "text-link" id = "moooodify" href = "https://www.moooodify.com/" target="_blank">moooodify, </a>
 								<a href = "https://twitter.com/sidahuj/status/1437443359224655874?s=20" id = "figma-plugins" class = "text-link" target="_blank">Figma plugins, </a>
 								 <a href = "https://blog.prototypr.io/creating-ar-scenes-in-30-minutes-with-no-code-543d367fe079" id = "ar-article" class = "text-link" target="_blank">AR experiments</a> or lurking on 
 								<a href = "https://twitter.com/sidahuj" id = "figma-plugins" class = "text-link" target="_blank">Twitter.</a>
@@ -67,20 +66,20 @@
 					<div id = "flex-1-2">
 
 						<div id = "flex-1-2-1" class = "header line" >
-							SELECTED WORK
+							<div class = "fade2">SELECTED WORK</div>
 						</div>
 
 
 						<div id = "flex-1-2-2">
-							<a id = "lego-ventures" class="case-study" href = "https://prophecy.one/work/lego-ventures" target = "_blank">
+							<a id = "lego-ventures" class="case-study fade3" href = "https://prophecy.one/work/lego-ventures" target = "_blank">
 								<h2>Lego Ventures</h2>
 								<div class = "description">Designing experiments to validate an idea.</div>
 							</a>
 							<a id = "yoguide" class="case-study line" href = "https://ux-design-awards.com/en/gewinner/yoguide" target = "_blank">
-								<h2>Yoguide</h2>
-								<div class = "description">An award-winning yoga app for the blind.</div>
+								<h2 class = "fade4">Yoguide</h2>
+								<div class = "description fade4">An award-winning yoga app for the blind.</div>
 							</a>
-							<a id = "smallcase" class="case-study" href = "https://prophecy.one/work/smallcase/" target = "_blank">
+							<a id = "smallcase" class="case-study fade5" href = "https://prophecy.one/work/smallcase/" target = "_blank">
 								<h2>smallcase</h2>
 								<div class = "description">Making investing as easy as booking a cab.</div>
 							</a>
@@ -88,7 +87,7 @@
 					</div>
 				</div>
 
-				<div id = "flex-2">
+				<div id = "flex-2" class = "opacityAnim">
 					<canvas id="canvas"></canvas>
 				</div>
 
@@ -117,7 +116,7 @@
 
 -->
 
-
+		<script src="scripts/contentLoader.js"></script>
 		<script>
 			$(window).on('load', function () {
 			$('.marquee').marquee({
