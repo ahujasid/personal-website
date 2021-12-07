@@ -256,13 +256,20 @@ a{
 
 
 @media screen and (max-width: 1024px) {
-        
+
+  
     body{
         height: 100%;
-        overflow: scroll;
+        overflow-y: scroll;
         max-width: 100%;
+        position: relative;
+        
+    }
+
+    html,body{
         overflow-x: hidden;
     }
+        
     
     h1{
         font-size: 56px;
@@ -305,6 +312,7 @@ a{
     .content{
         flex-direction: column-reverse;
         height: 100%;
+        /* margin-bottom: 80px; */
     }
     
     .description{
@@ -354,10 +362,7 @@ a{
         /* outline: 1px solid var(--border-color); */
     }
     
-    #smallcase{
-        margin-bottom: 80px;
-    }
-    
+
     p{
         margin-bottom: 24px;
         font-size: 14px;
