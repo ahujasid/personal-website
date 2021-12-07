@@ -16,6 +16,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
+		<link rel="stylesheet" href="fonts.css">
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="gradients.css">
 		<!-- <link rel="stylesheet" href="animateLine.css"> -->
@@ -36,7 +37,8 @@
 
 			<div class = "top-heading">
 				<div id = "name">Siddharth Ahuja</div>
-				<div id = "contact">Reach out at ahujasid@gmail.com + other socials</div>
+				<!-- <button id = "dark-mode">Dark mode</button> -->
+				<div id = "contact">Reach out at ahujasid@gmail.com</div>
 			</div>
 
 
@@ -49,11 +51,16 @@
 				<div id = "flex-1">
 					<div id = "flex-1-1">
 						<div id = "flex-1-1-2">
-							<p>I’m Siddharth, a UX Designer who believes in advocating for users by using a research-heavy, experiment-based and collaborative design approach to create magical products.</p>
+							<p>I’m Siddharth, a UX Designer who believes in advocating for users by using a research-heavy, experiment-based and collaborative design approach to create 
+								<a class = "text-link" id = "magic-article" href = "https://medium.com/swlh/a-designers-guide-to-creating-digital-products-that-inspire-c4fc0b7e15d0" target="_blank">magical products.</a></p>
 
-							<p>Currently I’m a co-founder at Prophecy, a digital innovation and product design consultancy.</p>
+							<p>Currently I’m a co-founder at <a class = "text-link" id = "prophecy" href = "https://prophecy.one/" target="_blank">Prophecy</a>, a digital innovation and product design consultancy.</p>
 
-							<p>In my free time you’ll find me building out my ideas like moooodify, some Figma plugins or VR experiments.</p>
+							<p>In my free time you’ll find me building out ideas like <a class = "text-link" id = "moooodify" href = "https://www.moooodify.com/" target="_blank">moooodify, </a>
+								<a href = "https://twitter.com/sidahuj/status/1437443359224655874?s=20" id = "figma-plugins" class = "text-link" target="_blank">Figma plugins, </a>
+								 <a href = "https://blog.prototypr.io/creating-ar-scenes-in-30-minutes-with-no-code-543d367fe079" id = "ar-article" class = "text-link" target="_blank">AR experiments</a> or lurking on 
+								<a href = "https://twitter.com/sidahuj" id = "figma-plugins" class = "text-link" target="_blank">Twitter.</a>
+							</p>
 						</div>
 
 					</div>
@@ -65,18 +72,18 @@
 
 
 						<div id = "flex-1-2-2">
-							<div id = "lego-ventures" class="case-study">
+							<a id = "lego-ventures" class="case-study" href = "https://prophecy.one/work/lego-ventures" target = "_blank">
 								<h2>Lego Ventures</h2>
 								<div class = "description">Designing experiments to validate an idea.</div>
-							</div>
-							<div id = "yoguide" class="case-study">
+							</a>
+							<a id = "yoguide" class="case-study" href = "https://ux-design-awards.com/en/gewinner/yoguide" target = "_blank">
 								<h2>Yoguide</h2>
 								<div class = "description">An award-winning yoga app for the blind.</div>
-							</div>
-							<div id = "smallcase" class="case-study">
+							</a>
+							<a id = "smallcase" class="case-study" href = "https://prophecy.one/work/smallcase/" target = "_blank">
 								<h2>smallcase</h2>
 								<div class = "description">Making investing as easy as booking a cab.</div>
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -132,105 +139,7 @@
 		<script src="dat.gui.min.js"></script>
 	
 
-<!-- 
-		<script id="texture_vertex_simulation_shader" type="x-shader/x-vertex">
-				
-			varying vec2 vUv;
 
-			void main() {
-
-				vUv = vec2(uv.x, 1.0 - uv.y);
-				gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
-
-			}
-
-		</script>
-		<script id="texture_fragment_simulation_shader" type="x-shader/x-fragment">
-				
-			// simulation
-			varying vec2 vUv;
-			
-			uniform vec3 origin;
-			uniform sampler2D tPositions;
-			
-			uniform float timer;
-
-
-			float rand(vec2 co){
-			    return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);
-			}
-		
-			void main() {
-
-
-				vec3 pos = texture2D( tPositions, vUv ).xyz;
-
-				if ( rand( vUv + timer ) > 0.99 ) {
-
-					pos = origin;
-
-					vec3 random = vec3( rand( vUv + 1.0 ) - 1.0, rand( vUv + 2.0 ) - 1.0, rand( vUv + 3.0 ) - 1.0 );
-					pos += normalize( random ) * rand( vUv + 1.0 );
-
-				} else {
-
-					float x = pos.x + timer;
-					float y = pos.y;
-					float z = pos.z;
-
-					pos.x += sin( y * 3.3 ) * cos( z * 10.3 ) * 0.005;
-					pos.y += sin( x * 3.5 ) * cos( z * 10.5 ) * 0.005;
-					pos.z += sin( x * 3.7 ) * cos( y * 10.7 ) * 0.005;
-
-				}
-
-
-				// Write new position out
-				gl_FragColor = vec4(pos, 1.0);
-
-
-			}
-
-
-		</script>
-
-
-		<script id="vs-particles" type="x-shader/x-vertex">
-
-			uniform sampler2D map;
-
-			uniform float width;
-			uniform float height;
-
-			uniform float pointSize;
-
-			varying vec2 vUv;
-			varying vec4 vPosition;
-			varying vec4 vColor;
-
-			void main() {
-
-				vec2 uv = position.xy + vec2( 0.5 / width, 0.5 / height );
-				vec3 color = texture2D( map, uv ).rgb * 200.0 - 100.0;
-
-				gl_PointSize = pointSize;
-				gl_Position = projectionMatrix * modelViewMatrix * vec4( color, 1.0 );
-
-			}
-
-		</script>
-
-		<script id="fs-particles" type="x-shader/x-fragment">
-
-			uniform vec4 pointColor;
-
-			void main() {
-
-				gl_FragColor = pointColor;
-
-			}
-
-		</script> -->
 
 		<script id = "vertexShader" type="x-shader/x-vertex">
 
@@ -489,6 +398,21 @@
 <script src = "waves.js"></script>
 
 
+<script>
+	// document.getElementById('dark-mode').onclick = function(){
+		
+	// 	if(document.documentElement.getAttribute('data-theme') !== 'dark')
+	// 	document.documentElement.setAttribute('data-theme', 'dark');
+
+	// 	else
+	// 	document.documentElement.setAttribute('data-theme', 'light');
+
+	// 	toggleDarkModeBlob();
+	// 	toggleDarkModeWaves();
+	// };
+	
+
+</script>
 
 
 <!-- <script src="three.min.js"></script>

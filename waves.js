@@ -5,6 +5,15 @@ var canvas;
         var tick;
         var mouseX;
         var mouseY;
+        var linkHover = false;
+
+
+        var isDarkModeWaves = false;
+
+        function toggleDarkModeWaves(){
+            isDarkModeWaves = !isDarkModeWaves;
+        }
+
 
         function setup() {
             noise.seed(Math.random());
@@ -17,6 +26,22 @@ var canvas;
             // canvas.addEventListener("click", onClick);
             mouseX = 0;
             mouseY = 0;
+            setEventListeners();
+        }
+
+        function setEventListeners(){
+            
+            var links = document.getElementsByClassName('case-study');
+
+            for (var idx= 0; idx < links.length; ++idx){
+                links[idx].addEventListener("mouseenter", function(event){
+                    linkHover = true;
+                });
+
+                links[idx].addEventListener("mouseleave", function(event){
+                    linkHover = false;
+                });
+            }
         }
 
         function onMouseMove(event) {
@@ -46,7 +71,25 @@ var canvas;
             ctx.beginPath();
             for(var x = 0; x < w; x++) {
                 var y = Math.sin(x/w*p + phase) * a + y0;
-                ctx.strokeStyle = '#141414';
+
+                // if(!isDarkModeWaves){
+                    if(!linkHover){
+                        ctx.strokeStyle = '#141414';
+                    }
+                    else if(linkHover){
+                        ctx.strokeStyle = '#fff';
+                    }
+                // }
+
+                // if(isDarkModeWaves){
+                //     if(!linkHover){
+                //         ctx.strokeStyle = '#fff';
+                //     }
+                //     else if(linkHover){
+                //         ctx.strokeStyle = '#141414';
+                //     }
+                // }
+            
                 ctx.lineTo(x, y);
             }
             ctx.stroke();

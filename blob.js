@@ -3,9 +3,20 @@ var container;
 			var scene, camera, renderer;
 			var cube, mesh2;
 			var hover = false;
+			var linkHover = false;
+			var smallcaseHover = false;
+			var legoVenturesHover = false;
+			var yoguideHover = false;
 			var start = Date.now(); 
 
 			var _primitive;
+
+			var isDarkMode = false;
+
+			function toggleDarkModeBlob(){
+				isDarkMode = !isDarkMode;
+				console.log("toggled");
+			}
 
 
 
@@ -234,7 +245,52 @@ var container;
                     hover = false;
                 });
 
+				var links = document.getElementsByClassName('text-link');
+
+				for (var idx= 0; idx < links.length; ++idx){
+					links[idx].addEventListener("mouseenter", function(event){
+						hover = true;
+					});
+	
+					links[idx].addEventListener("mouseleave", function(event){
+						hover = false;
+					});
+				}
+
                 window.addEventListener('resize', onWindowResize, false);
+
+				var smallcase = document.getElementById('smallcase');
+				var legoVentures = document.getElementById('lego-ventures');
+				var yoguide = document.getElementById('yoguide');
+
+
+				smallcase.addEventListener("mouseenter", function(event){
+                    smallcaseHover = true;
+                });
+
+				smallcase.addEventListener("mouseleave", function(event){
+                    smallcaseHover = false;
+                });
+
+				yoguide.addEventListener("mouseenter", function(event){
+                    yoguideHover = true;
+                });
+
+				yoguide.addEventListener("mouseleave", function(event){
+                    yoguideHover = false;
+                });
+
+				legoVentures.addEventListener("mouseenter", function(event){
+                    legoVenturesHover = true;
+                });
+
+				legoVentures.addEventListener("mouseleave", function(event){
+                    legoVenturesHover = false;
+                });
+
+				
+
+		
         }
 	
 			function animate() {
@@ -278,6 +334,22 @@ var container;
                     mat.uniforms['redhell'].value = hoverOptions.perlin.redhell;
 
                 }
+
+				if(smallcaseHover){
+					renderer.setClearColor(0x000fff);
+				}
+
+				else if(yoguideHover){
+					renderer.setClearColor(0x000000);
+				}
+
+				else if(legoVenturesHover){
+					renderer.setClearColor(0xf00048);
+				}
+
+				else renderer.setClearColor(0xffffff,0);
+
+
 
 				camera.lookAt(scene.position);
      
