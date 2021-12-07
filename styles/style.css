@@ -68,6 +68,7 @@ body {
     margin: 0px;
     overflow: hidden;
     height: 100%;
+
 }
 
 
@@ -259,6 +260,8 @@ a{
     body{
         height: 100%;
         overflow: scroll;
+        max-width: 100%;
+        overflow-x: hidden;
     }
     
     h1{
@@ -351,7 +354,9 @@ a{
         /* outline: 1px solid var(--border-color); */
     }
     
-    
+    #smallcase{
+        margin-bottom: 80px;
+    }
     
     p{
         margin-bottom: 24px;
