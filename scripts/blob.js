@@ -257,7 +257,7 @@ var container;
 					});
 				}
 
-                window.addEventListener('resize', onWindowResize, false);
+                // window.addEventListener('resize', onWindowResize, false);
 
 				var smallcase = document.getElementById('smallcase');
 				var legoVentures = document.getElementById('lego-ventures');
@@ -361,11 +361,11 @@ var container;
 				
 			}
 
-			function onWindowResize() {
-				_width = window.innerWidth;
-				_height = window.innerHeight;
-				renderer.setSize(_width, _height);
-				camera.aspect = _width / _height;
-				camera.updateProjectionMatrix();
-				console.log('- resize -');
-			}
+			// function onWindowResize() {
+			// 	_width = window.innerWidth;
+			// 	_height = window.innerHeight;
+			// 	renderer.setSize(_width, _height);
+			// 	camera.aspect = _width / _height;
+			// 	camera.updateProjectionMatrix();
+			// 	console.log('- resize -');
+			// }
