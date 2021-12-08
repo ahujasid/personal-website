@@ -96,6 +96,20 @@ h2{
     margin: 0 auto;
 }
 
+.js-marquee-wrapper{
+    transform: translateZ(0);
+    transform: rotateZ(360deg);
+    -webkit-transform: translateZ(0);
+    -webkit-transform: rotateZ(360deg);
+}
+
+.js-marquee{
+    transform: translateZ(0);
+    transform: rotateZ(360deg);
+    -webkit-transform: translateZ(0);
+    -webkit-transform: rotateZ(360deg);
+}
+
 .marquee{
 
     height: 172px;
@@ -171,6 +185,7 @@ h2{
     height: calc(100% - 64px);
     width: 100%;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 
@@ -187,6 +202,7 @@ h2{
     flex-direction: column;
     justify-content: center;
     padding: 32px;
+    box-sizing: border-box;
 }
 
 #yoguide{

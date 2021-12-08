@@ -1,25 +1,67 @@
 .fade1{
     opacity: 0;
+    transform: translateZ(0) rotateZ(360deg);
+    -webkit-transform: translateZ(0) rotateZ(360deg);
+
+    animation: fadeIn 0.4s ease-out forwards;
+    -webkit-animation: fadeIn 0.4s ease-out forwards;
+    animation-delay: 200ms;
+    -webkit-animation-delay: 200ms;
 }
 
 .fade2{
     opacity: 0;
+    transform: translateZ(0) rotateZ(360deg);
+    -webkit-transform: translateZ(0) rotateZ(360deg);
+
+    animation: fadeIn 0.4s ease-out forwards;
+    -webkit-animation: fadeIn 0.4s ease-out forwards;
+    animation-delay: 500ms;
+    -webkit-animation-delay: 500ms;
 }
 
 .fade3{
     opacity: 0;
+    transform: translateZ(0) rotateZ(360deg);
+    -webkit-transform: translateZ(0) rotateZ(360deg);
+
+    animation: fadeIn 0.4s ease-out forwards;
+    -webkit-animation: fadeIn 0.4s ease-out forwards;
+    animation-delay: 700ms;
+    -webkit-animation-delay: 700ms;
 }
 
 .fade4{
     opacity: 0;
+    transform: translateZ(0) rotateZ(360deg);
+    -webkit-transform: translateZ(0) rotateZ(360deg);
+
+    animation: fadeIn 0.4s ease-out forwards;
+    -webkit-animation: fadeIn 0.4s ease-out forwards;
+    animation-delay: 800ms;
+    -webkit-animation-delay: 800ms;
 }
 
 .fade5{
     opacity: 0;
+    transform: translateZ(0) rotateZ(360deg);
+    -webkit-transform: translateZ(0) rotateZ(360deg);
+
+    animation: fadeIn 0.4s ease-out forwards;
+    -webkit-animation: fadeIn 0.4s ease-out forwards;
+    animation-delay: 900ms;
+    -webkit-animation-delay: 900ms;
 }
 
 .opacityAnim{
     opacity: 0;
+    transform: translateZ(0) rotateZ(360deg);
+    -webkit-transform: translateZ(0) rotateZ(360deg);
+
+    animation: opacityIn 0.4s ease-out forwards;
+    -webkit-animation: opacityIn 0.4s ease-out forwards;
+    animation-delay: 1100ms;
+    -webkit-animation-delay: 1100ms;
 }
 
 
@@ -47,3 +89,26 @@
     }
 }
 
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+ 
+ 
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@-webkit-keyframes opacityIn {
+    0% {
+        opacity: 0;
+    }
+ 
+ 
+    100% {
+        opacity: 1;
+    }
+}

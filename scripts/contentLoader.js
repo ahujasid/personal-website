@@ -4,6 +4,7 @@ window.onload = function()
 
     for (var idx= 0; idx < fade1.length; ++idx){
       fade1[idx].style.animation="fadeIn 0.4s ease-out forwards";
+      fade1[idx].style.webkitAnimation="fadeIn 0.4s ease-out forwards";
     }
 
     fade2 = document.getElementsByClassName('fade2');
@@ -11,6 +12,7 @@ window.onload = function()
     setTimeout(function(){
         for (var idx= 0; idx < fade2.length; ++idx){
             fade2[idx].style.animation="fadeIn 0.4s ease-out forwards";
+            fade2[idx].style.webkitAnimation="fadeIn 0.4s ease-out forwards";
           }
     },300);
 
@@ -19,6 +21,7 @@ window.onload = function()
     setTimeout(function(){
         for (var idx= 0; idx < fade3.length; ++idx){
             fade3[idx].style.animation="fadeIn 0.4s ease-out forwards";
+            fade3[idx].style.webkitAnimation="fadeIn 0.4s ease-out forwards";
           }
     },600);
 
@@ -27,6 +30,7 @@ window.onload = function()
     setTimeout(function(){
         for (var idx= 0; idx < fade4.length; ++idx){
             fade4[idx].style.animation="fadeIn 0.4s ease-out forwards";
+            fade4[idx].style.webkitAnimation="fadeIn 0.4s ease-out forwards";
           }
     },700);
 
@@ -35,6 +39,7 @@ window.onload = function()
     setTimeout(function(){
         for (var idx= 0; idx < fade5.length; ++idx){
             fade5[idx].style.animation="fadeIn 0.4s ease-out forwards";
+            fade5[idx].style.webkitAnimation="fadeIn 0.4s ease-out forwards";
           }
     },800);
 
@@ -51,10 +56,10 @@ window.onload = function()
               }
         },400);
 
-        setTimeout(function(){
-          document.getElementById('gradient-1').style.animation = "gradientIn 0.2s linear forwards";
-          document.getElementById('gradient-2').style.animation = "gradientIn 0.2s linear forwards";
-        },300);
+        // setTimeout(function(){
+        //   document.getElementById('gradient-1').style.animation = "gradientIn 0.2s linear forwards";
+        //   document.getElementById('gradient-2').style.animation = "gradientIn 0.2s linear forwards";
+        // },300);
     }
 
     else{
@@ -65,10 +70,10 @@ window.onload = function()
           }
     },1000);
 
-    setTimeout(function(){
-      document.getElementById('gradient-1').style.animation = "gradientIn 0.2s linear forwards";
-      document.getElementById('gradient-2').style.animation = "gradientIn 0.2s linear forwards";
-    },900);
+    // setTimeout(function(){
+    //   document.getElementById('gradient-1').style.animation = "gradientIn 0.2s linear forwards";
+    //   document.getElementById('gradient-2').style.animation = "gradientIn 0.2s linear forwards";
+    // },900);
     }
 
     
