@@ -5,8 +5,8 @@
 
     animation: fadeIn 0.4s ease-out forwards;
     -webkit-animation: fadeIn 0.4s ease-out forwards;
-    animation-delay: 200ms;
-    -webkit-animation-delay: 200ms;
+    animation-delay: 400ms;
+    -webkit-animation-delay: 400ms;
 }
 
 .fade2{
@@ -16,22 +16,11 @@
 
     animation: fadeIn 0.4s ease-out forwards;
     -webkit-animation: fadeIn 0.4s ease-out forwards;
-    animation-delay: 500ms;
-    -webkit-animation-delay: 500ms;
+    animation-delay: 600ms;
+    -webkit-animation-delay: 600ms;
 }
 
 .fade3{
-    opacity: 0;
-    transform: translateZ(0) rotateZ(360deg);
-    -webkit-transform: translateZ(0) rotateZ(360deg);
-
-    animation: fadeIn 0.4s ease-out forwards;
-    -webkit-animation: fadeIn 0.4s ease-out forwards;
-    animation-delay: 700ms;
-    -webkit-animation-delay: 700ms;
-}
-
-.fade4{
     opacity: 0;
     transform: translateZ(0) rotateZ(360deg);
     -webkit-transform: translateZ(0) rotateZ(360deg);
@@ -42,7 +31,7 @@
     -webkit-animation-delay: 800ms;
 }
 
-.fade5{
+.fade4{
     opacity: 0;
     transform: translateZ(0) rotateZ(360deg);
     -webkit-transform: translateZ(0) rotateZ(360deg);
@@ -53,6 +42,17 @@
     -webkit-animation-delay: 900ms;
 }
 
+.fade5{
+    opacity: 0;
+    transform: translateZ(0) rotateZ(360deg);
+    -webkit-transform: translateZ(0) rotateZ(360deg);
+
+    animation: fadeIn 0.4s ease-out forwards;
+    -webkit-animation: fadeIn 0.4s ease-out forwards;
+    animation-delay: 1000ms;
+    -webkit-animation-delay: 1000ms;
+}
+
 .opacityAnim{
     opacity: 0;
     transform: translateZ(0) rotateZ(360deg);
@@ -60,8 +60,8 @@
 
     animation: opacityIn 0.4s ease-out forwards;
     -webkit-animation: opacityIn 0.4s ease-out forwards;
-    animation-delay: 1100ms;
-    -webkit-animation-delay: 1100ms;
+    animation-delay: 1200ms;
+    -webkit-animation-delay: 1200ms;
 }
 
 

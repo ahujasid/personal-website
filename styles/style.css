@@ -280,17 +280,15 @@ a{
   
     body{
         height: 100%;
-        overflow-y: scroll;
+        overflow: scroll;
         max-width: 100%;
         position: relative;
+        -webkit-overflow-scrolling: touch;
+        overflow-x: hidden;
+        
         
     }
 
-    html,body{
-        overflow-x: hidden;
-    }
-        
-    
     h1{
         font-size: 56px;
         line-height: 96px;
@@ -298,7 +296,7 @@ a{
     }
     
     h2{
-        font-size: 28px;
+        font-size: 40px;
         padding-bottom: 8px;
     }
     
@@ -308,6 +306,7 @@ a{
         border: 1px solid var(--border-color);
         height: 100%;
         margin: 0 auto;
+
     }
     
     .marquee{
