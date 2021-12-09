@@ -70,6 +70,20 @@ body {
 
 }
 
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: #141414;
+  }
+  
+::selection {
+color: #fff;
+background: #141414;
+}
+
+::-webkit-selection {
+    color: #fff;
+    background: #141414;
+    }
 
 h1{
     font-size: 120px;
