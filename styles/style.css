@@ -88,7 +88,8 @@ background: #141414;
 
 h1{
     font-size: 7.5rem;
-    line-height: 10.75rem;
+    /* line-height: 10.75rem; */
+    line-height: 16vh;
     font-family: 'Swear', serif;
     position: relative;
     bottom: 0.5rem;
@@ -127,7 +128,8 @@ h2{
 
 .marquee{
 
-    height: 10.75rem;
+    /* height: 10.75rem; */
+    height: 16vh;
     overflow: hidden;
     width: 100%;
 }
