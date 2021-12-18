@@ -54,6 +54,7 @@ table {
     --yoguide-color: #141414;
     --lego-ventures-color: #f00048;
     --body-size: 0.9375rem;
+    --link-hover-size: 1.25rem;
 }
 
 [data-theme="dark"] {
@@ -164,7 +165,7 @@ h2{
 
 .content{
     /* border: 1px solid var(--border-color); */
-    height: calc(100vh - 14.25rem);
+    height: calc(100vh - 3.5rem - 16vh);
     display: flex;
     width: 100%;
     position: relative;
@@ -253,10 +254,15 @@ canvas{
 a{
     text-decoration: none;
     color: inherit;
+    font-weight: 600;
+    font-size: var(--body-size);
 }
 
 .text-link:hover{
-    font-weight: 600;
+    font-family: Swear, serif;
+    font-weight: regular;
+    font-size: var(--link-hover-size);
+    line-height: 1;
 }
 
 .case-study:hover{
